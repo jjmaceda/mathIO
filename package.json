@@ -1,5 +1,5 @@
 {
-  "name": "mathIO",
+  "name": "mathio",
   "version": "0.0.1",
   "description": "A libary of math algorithms and basic math functions.",
   "main": "math.js",
