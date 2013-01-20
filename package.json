@@ -1,0 +1,15 @@
+{
+  "name": "mathIO",
+  "version": "0.0.1",
+  "description": "A libary of math algorithms and basic math functions.",
+  "main": "math.js",
+  "scripts": {
+    "test": "square(1);"
+  },
+  "repository": {"type": "git", "url": "git://github.com/C1D/mathIO.git"},
+  "keywords": [
+    "math"
+  ],
+  "author": "C1D",
+  "license": "BSD"
+}
