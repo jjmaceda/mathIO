@@ -1,6 +1,6 @@
 {
   "name": "mathio",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A libary of math algorithms and basic math functions.",
   "main": "math.js",
   "scripts": {
