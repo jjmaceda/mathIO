@@ -35,11 +35,24 @@ var getx = function(a, b){
     return Math.sqrt((a*a)-(b*b));
 };
 
+
+//==Congruent Triangles==
+var congruent = function(a, b){
+	if((a.a == b.a || a.a == b.b || a.a == b.c) && (a.b == b.a || a.b == b.b || a.b == b.c) && (a.c == b.a || a.c == b.b || a.c == b.c)
+	   && (a.type = b.type)){
+		return true;
+	}else{
+		return false;
+	}
+}
+
+
 //Exports the module
 module.exports = {
     square : square,
     isdecimal : isdecimal,
     shape_tessellate : shape_tessellate,
     gethypotenuse : gethypotenuse,
-    getx : getx
+    getx : getx,
+    congruent : congruent
 };
