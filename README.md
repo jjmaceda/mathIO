@@ -1,7 +1,7 @@
 mathIO
 ======
 
-mathIO is a (npm module) libary of math algorithms and basic math functions. I try to get as much algorithms that 
-I know on to this npm module, I also try to get basic math functions that node.js lacks.
-
-I would love some one to help me out since this is my first npm module!
+mathIO is a (npm module) libary of math algorithms and basic math functions.
+When ever I learn a new subject or algorithm todo with Math I add it here. I'm allways learning so
+you'll be able to see a lot of great stuff popup on math.IO.
+It has some great functions you'll really want to use and functions that can save you some time.
