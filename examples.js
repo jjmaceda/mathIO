@@ -14,3 +14,10 @@ if(m.shape_tessellate(4) == true){
 }else{
     console.log("No");
 }
+//This will check if two triangles are congruent
+console.log("Is a SSS Triangle with 1cm,2cm,3cm congruent with a SSS Triangle with 3cm,2cm,1cm.");
+if(m.congruent({a:1, b:2, c:3, type:"SSS"},{a:3, b:2, c:1, type:"SSS"} == true){
+	console.log("Yes!");
+}else{
+	console.log("No!");
+}
