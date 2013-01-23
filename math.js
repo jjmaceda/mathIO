@@ -1,9 +1,11 @@
 //MathIO - A Libary of math algorithms and basic math functions
 //by @_C1D
 //==Basic Math Functions==
+//This will square your number
 var square = function(a){
     return a*a;
 };
+//This checks if the input is a decimal
 var isdecimal = function(i){
     if(i % 1 != 0){
         return true;
@@ -11,6 +13,14 @@ var isdecimal = function(i){
         return false;
     }
 };
+//Gets the sum of numbers in a array
+var e = function(array){
+	var sum = 0;
+	for (var i=0, total=array.length; i < total; i++) {
+		sum += array[i];
+    }
+    return sum;
+}
 
 
 //==Tessellation==
@@ -37,6 +47,8 @@ var getx = function(a, b){
 
 
 //==Congruent Triangles==
+//This check if two triangles are congruent. Triangles are formated like this:
+//a = {a:1, b:2, c:3, type:"SSS"};
 var congruent = function(a, b){
 	if((a.a == b.a || a.a == b.b || a.a == b.c) && (a.b == b.a || a.b == b.b || a.b == b.c) && (a.c == b.a || a.c == b.b || a.c == b.c)
 	   && (a.type = b.type)){
@@ -47,6 +59,8 @@ var congruent = function(a, b){
 }
 
 
+//==Cumulative Frequency=
+
 //Exports the module
 module.exports = {
     square : square,
@@ -54,5 +68,6 @@ module.exports = {
     shape_tessellate : shape_tessellate,
     gethypotenuse : gethypotenuse,
     getx : getx,
-    congruent : congruent
+    congruent : congruent,
+    e : e
 };
