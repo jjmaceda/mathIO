@@ -60,7 +60,7 @@ var congruent = function(a, b){
 
 
 //==Cumulative Frequency=
-
+//Coming soon
 //Exports the module
 module.exports = {
     square : square,
