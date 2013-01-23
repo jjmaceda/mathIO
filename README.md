@@ -1,5 +1,16 @@
 #mathIO
 
+##Status
+Build status of files:
+```
+npm publish - OK
+node examples.js - OK
+node math.js - OK
+=================
+LAST TEST: 23/01/13
+VERSION: 0.0.3
+```
+
 ##Introduction
 
 mathIO is a (npm module) libary of math algorithms and basic math functions.
