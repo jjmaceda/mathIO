@@ -28,4 +28,4 @@ npm install mathio@0.0.2
 
 ##Use
 
-Coming Soon. Check out examples.js for now ;D
+How to get the hypotenuse of a Triangle where a = 1 and b = 2:
