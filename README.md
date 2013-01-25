@@ -29,3 +29,15 @@ npm install mathio@0.0.2
 ##Use
 
 How to get the hypotenuse of a Triangle where a = 1 and b = 2:
+
+```javascript
+//This will get the hyp of a triangle - Where a = 1 and b = 2. The right answer is: 2.2360797749979
+console.log("The hypotenuse of a Triangle where a = 1 and b = 2 is:\n" + m.gethypotenuse(1, 2));
+```
+
+How to get the side of a triangle - Where a = 5 (The hyp of the triangle) and b = 2.
+
+```javascript
+//This will get the side of a triangle - Where a = 5 (The hyp of the triangle) and b = 2. The right answer is: 4.5825.......
+console.log("The side of a Triangle where a = 5 (The hyp of the triangle) and b = 2 is:\n" + m.getx(5, 2));
+```
