@@ -51,3 +51,5 @@ if(m.shape_tessellate(8) == true){
     console.log("No");
 }
 ```
+
+Note: This section is a W.I.P so check out examples.js for all the functions.
