@@ -41,3 +41,13 @@ How to get the side of a triangle - Where a = 5 (The hyp of the triangle) and b 
 //This will get the side of a triangle - Where a = 5 (The hyp of the triangle) and b = 2. The right answer is: 4.5825.......
 console.log("The side of a Triangle where a = 5 (The hyp of the triangle) and b = 2 is:\n" + m.getx(5, 2));
 ```
+
+The shape_tessellate function can tell you if a shape will tessellate based on its sides, Here is an example:
+
+```javascript
+if(m.shape_tessellate(8) == true){
+    console.log("Yes");
+}else{
+    console.log("No");
+}
+```
