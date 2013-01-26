@@ -52,4 +52,15 @@ if(m.shape_tessellate(8) == true){
 }
 ```
 
+The congurent function takes a JSON object with two triangles and will tell you if they are congruent:
+
+```javascript
+console.log("Is a SSS Triangle with 1cm,2cm,3cm congruent with a SSS Triangle with 3cm,2cm,1cm.");
+if(m.congruent({a:1, b:2, c:3, type:"SSS"},{a:3, b:2, c:1, type:"SSS"} == true){
+    console.log("Yes!");
+}else{
+	console.log("No!");
+}
+```
+
 Note: This section is a W.I.P so check out examples.js for all the functions.
