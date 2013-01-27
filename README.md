@@ -63,4 +63,4 @@ if(m.congruent({a:1, b:2, c:3, type:"SSS"},{a:3, b:2, c:1, type:"SSS"} == true){
 }
 ```
 
-Note: This section is a W.I.P so check out examples.js for all the functions.
+Note: This section is a W.I.P so check out examples.js for all the functions. I did not include the basic math functions so please see the examples file!
