@@ -10,5 +10,6 @@ Here is my mathIO todo list:
 
 1. Fix any bugs you find.
 2. Add any algorithms you find.
-3. Add mean, median and cumulative frequency related functions.
-4. Anything else!
+3. Add metric conversion.
+4. Add mean, median and cumulative frequency related functions.
+5. Anything else!
