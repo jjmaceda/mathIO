@@ -10,6 +10,6 @@ Here is my mathIO todo list:
 
 1. Fix any bugs you find.
 2. Add any algorithms you find.
-3. Add metric conversion (eg m to cm. km to m).
+3. Add mesurement (eg. imperial or metric) conversions (eg m to cm, km to m, yard to km, hectare to m, etc....).
 4. Add mean, median and cumulative frequency related functions.
 5. Anything else!
