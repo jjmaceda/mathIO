@@ -59,9 +59,14 @@ var congruent = function(a, b){
 }
 
 
-//==Cumulative Frequency=
-//Coming soon
-//Exports the module
+//==Mesurement Conversion==
+//This will be able to convert two metric units eg. m to cm or yard to m
+//data = {type: {from : "cm", to: "m"}, value : 1};
+var convert = function(data){
+	if(data.type.from == "cm" && data.type.to == "m"){
+		return (data.value*0.01);
+	}
+}
 module.exports = {
     square : square,
     isdecimal : isdecimal,
