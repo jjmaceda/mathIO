@@ -1,4 +1,6 @@
 //MathIO - A Libary of math algorithms and basic math functions
+//STABLE: v0.0.3
+//DEV: v0.0.3.1
 //by @_C1D
 //==Basic Math Functions==
 //This will square your number
@@ -61,7 +63,7 @@ var congruent = function(a, b){
 
 //==Mesurement Conversion==
 //This will be able to convert two metric units eg. m to cm or yard to m
-//data = {type: {from : "cm", to: "m"}, value : 1};
+//data = {type: {from : "cm", to: "m"}, value : 1}; IN-DEV
 var convert = function(data){
 	if(data.type.from == "cm" && data.type.to == "m"){
 		return (data.value*0.01);
