@@ -1,6 +1,6 @@
 //MathIO - A Libary of math algorithms and basic math functions
 //STABLE: v0.0.3
-//DEVEL: v0.0.3.1
+//DEVEL: v0.0.3.3
 //by @_C1D
 //==Basic Math Functions==
 //This will square your number
@@ -62,11 +62,16 @@ var congruent = function(a, b){
 
 
 //==Mesurement Conversion==
-//This will be able to convert two metric units eg. m to cm or yard to m
-//data = {type: {from : "cm", to: "m"}, value : 1}; IN-DEV
-var convert = function(data){
-	if(data.type.from == "cm" && data.type.to == "m"){
-		return (data.value*0.01);
+//This will be able to convert two metric units eg. m to cm, km to m, etc..
+//data = {type: {from : 'cm', to: 'm', low: true}, value : 1}; IN-DEV
+var mconvert = function(data){
+	types = {'mm' : 10, 'cm' : 100,'m' : 1, 'km' : 1000};
+	var from = data.type.from;
+	var to = data.type.to;
+	if(data.type.low == true){
+		var r = (data.value/types.from)*types.to;
+	}else{
+		var r = (data.value*types.from)/types.to;
 	}
 }
 module.exports = {
