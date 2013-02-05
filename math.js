@@ -1,6 +1,6 @@
 //MathIO - A Libary of math algorithms and basic math functions
 //STABLE: v0.0.3
-//DEVEL: v0.0.3.3
+//DEVEL: v0.0.3.4
 //by @_C1D
 //==Basic Math Functions==
 //This will square your number
@@ -63,7 +63,8 @@ var congruent = function(a, b){
 
 //==Mesurement Conversion==
 //This will be able to convert two metric units eg. m to cm, km to m, etc..
-//data = {type: {from : 'cm', to: 'm', low: true}, value : 1}; IN-DEV
+//data = {type: {from : 'cm', to: 'm', low: true}, value : 1};
+//NOTE: This is an experimental function and has not been tested and may not work. You need to manually add this to module.exports for it to work.
 var mconvert = function(data){
 	types = {'mm' : 10, 'cm' : 100,'m' : 1, 'km' : 1000};
 	var from = data.type.from;
@@ -74,6 +75,13 @@ var mconvert = function(data){
 		var r = (data.value*types.from)/types.to;
 	}
 }
+
+//==Circular Functions==
+//This function will be able to get the arclength of a circle
+//data = {arcangle: 90, radius: 5};
+var arclength = function(data){
+	return data.arcangle/360*2*math.PI*data.radius;
+}
 module.exports = {
     square : square,
     isdecimal : isdecimal,
@@ -81,5 +89,6 @@ module.exports = {
     gethypotenuse : gethypotenuse,
     getx : getx,
     congruent : congruent,
-    e : e
+    e : e,
+    arclength : arclength
 };
