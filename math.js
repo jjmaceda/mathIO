@@ -77,10 +77,15 @@ var mconvert = function(data){
 }
 
 //==Circular Functions==
-//This function will be able to get the arclength of a circle
-//data = {arcangle: 90, radius: 5};
-var arclength = function(data){
-	return data.arcangle/360*2*math.PI*data.radius;
+//This function will be able to get the arch length of a circle
+//data = {archangle: 90, radius: 5};
+var archlength = function(data){
+	return data.archangle/360*2*math.PI*data.radius;
+}
+//This function will be able to get the arch area of a circle
+//data = {archangle: 90, radius: 5};
+var archarea = function(data){
+	return data.archangle/360*math.PI*(data.radius*data.radius);
 }
 module.exports = {
     square : square,
@@ -90,5 +95,6 @@ module.exports = {
     getx : getx,
     congruent : congruent,
     e : e,
-    arclength : arclength
+    archlength : archlength,
+    archarea : archarea
 };
