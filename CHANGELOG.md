@@ -1,8 +1,8 @@
 #mathIO - CHANGELOG
 ##Version 0.0.3.4 - ENTRY::5/02/2013
 <b>CHANGES</b><br>
-1. Added Arc Length.
-2. <br><br>
+1. Added Arch Length.<br>
+2. Added Arch Area.<br><br>
 ##Version 0.0.3.3 - ENTRY::5/02/2013
 <b>CHANGES</b><br>
 1. I've added a metric conversion function that will convert things like cm to m, or km to m.<br>
