@@ -1,7 +1,7 @@
 #mathIO - CHANGELOG
 ##Version 0.0.3.5 - ENTRY::6/02/2013
 <b>CHANGES</b><br>
-1. Addedpi <br>
+1. Added pi <br>
 2. Added getradius <br>
 3. Added getdiameter <br>
 4. Added getcircumference<br>
