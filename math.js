@@ -39,6 +39,7 @@ var shape_tessellate = function(s){
 
 //==Pythagoras Therom==
 //This will get the hyp of a triangle - A is one of the sides, B is the other side
+//Ex: a =1 and b =2
 var gethypotenuse = function(a, b){
     return Math.sqrt((a*a)+(b*b));
 };
