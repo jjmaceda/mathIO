@@ -1,4 +1,11 @@
 #mathIO - CHANGELOG
+##Version 0.0.3.5 - ENTRY::6/02/2013
+<b>CHANGES</b><br>
+1. Addedpi 
+2. Added getradius 
+3. Added getdiameter 
+4. Added getcircumference
+5. Added getcirclearea<br><br>
 ##Version 0.0.3.4 - ENTRY::5/02/2013
 <b>CHANGES</b><br>
 1. Added Arch Length.<br>
