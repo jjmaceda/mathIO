@@ -1,6 +1,6 @@
 //MathIO - A Libary of math algorithms and basic math functions
 //STABLE: v0.0.3
-//DEVEL: v0.0.3.4
+//DEVEL: v0.0.3.5
 //by @_C1D
 //==Basic Math Functions==
 //This will square your number
@@ -77,6 +77,7 @@ var mconvert = function(data){
 }
 
 //==Circular Functions==
+var pi = math.PI;
 //This function will be able to get the arch length of a circle
 //data = {archangle: 90, radius: 5};
 var archlength = function(data){
@@ -87,6 +88,26 @@ var archlength = function(data){
 var archarea = function(data){
 	return data.archangle/360*math.PI*(data.radius*data.radius);
 }
+//This will get the radius based on the diameter
+//d is the diameter.
+var getradius = function(d){
+	return d/2;
+}
+//This will get the diameter based on the radius
+//r is the radius
+var getdiameter = function(r){
+	return r*2;
+}
+//This will get the circumference based on the diameter.
+//d is the diameter
+var getcircumference = function(d){
+	return math.PI*d;
+}
+//This will get the area of a circle based on the radius.
+//r is the radius
+var getcirclearea = function(r){
+	return math.PI*(r*r);
+}
 module.exports = {
     square : square,
     isdecimal : isdecimal,
@@ -96,5 +117,10 @@ module.exports = {
     congruent : congruent,
     e : e,
     archlength : archlength,
-    archarea : archarea
+    archarea : archarea,
+    pi : pi,
+    getradius : getradius,
+    getdiameter : getdiameter,
+    getcircumference : getcircumference,
+    getcirclearea : getcirclearea
 };
