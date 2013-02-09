@@ -1,6 +1,6 @@
 //MathIO - A Libary of math algorithms and basic math functions
-//STABLE: v0.0.3
-//DEVEL: v0.0.3.5
+//STABLE: v0.0.4.0
+//DEVEL: v0.0.4.0
 //by @_C1D
 //==Basic Math Functions==
 //This will square your number
