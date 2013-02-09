@@ -1,5 +1,5 @@
 #mathIO - CHANGELOG
-##Version 0.0.3.5 to x.x.1.0 - ENTRY::6/02/2013
+##Version 0.0.3.5 to x.x.1.0 [0.0.4.0] - ENTRY::6/02/2013
 <b>CHANGES</b><br>
 1. Added pi <br>
 2. Added getradius <br>
