@@ -8,7 +8,7 @@ node examples.js - OK
 node math.js - OK
 =================
 LAST TEST: 23/01/13
-VERSION: 0.0.3
+VERSION: 0.0.4.0
 ```
 
 ##Introduction
