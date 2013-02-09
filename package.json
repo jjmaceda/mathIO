@@ -4,7 +4,7 @@
   "description": "A libary of math algorithms and basic math functions.",
   "main": "math.js",
   "scripts": {
-    "test": "square(1);"
+    "test": "examples.js"
   },
   "repository": {"type": "git", "url": "git://github.com/C1D/mathIO.git"},
   "keywords": [
