@@ -61,22 +61,6 @@ var congruent = function(a, b){
 	}
 }
 
-
-//==Mesurement Conversion==
-//This will be able to convert two metric units eg. m to cm, km to m, etc..
-//data = {type: {from : 'cm', to: 'm', low: true}, value : 1};
-//NOTE: This is an experimental function and has not been tested and may not work. You need to manually add this to module.exports for it to work.
-var mconvert = function(data){
-	types = {'mm' : 10, 'cm' : 100,'m' : 1, 'km' : 1000};
-	var from = data.type.from;
-	var to = data.type.to;
-	if(data.type.low == true){
-		var r = (data.value/types.from)*types.to;
-	}else{
-		var r = (data.value*types.from)/types.to;
-	}
-}
-
 //==Circular Functions==
 var pi = math.PI;
 //This function will be able to get the arch length of a circle
