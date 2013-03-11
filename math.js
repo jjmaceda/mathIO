@@ -93,6 +93,37 @@ var getcircumference = function(d){
 var getcirclearea = function(r){
 	return math.PI*(r*r);
 }
+
+//==Bound Functions==
+
+//This will get the upper bound of the input numbers. It currently only supports whole numbers.
+//numbers = ['1', '4', '5']
+var upperbound = function(numbers){
+	var f = '';
+	for (var i = 0; i <= numbers.length; i++){
+		numbers[i] = numbers[i] + 0.5;
+		if(i == numbers.length){
+			f += numbers[i];
+		}else{
+			f += numbers[i]+' *';
+		}
+	}
+	return eval(f);
+}
+//This will get the lower bound of the input numbers. It currently only supports whole numbers.
+//numbers = ['1', '4', '5']
+var lowerbound = function(numbers){
+	var f = '';
+	for (var i = 0; i <= numbers.length; i++){
+		numbers[i] = numbers[i] - 0.5;
+		if(i == numbers.length){
+			f += numbers[i];
+		}else{
+			f += numbers[i]+' +';
+		}
+	}
+	return eval(f);
+}
 module.exports = {
     square : square,
     isdecimal : isdecimal,
@@ -107,5 +138,7 @@ module.exports = {
     getradius : getradius,
     getdiameter : getdiameter,
     getcircumference : getcircumference,
-    getcirclearea : getcirclearea
+    getcirclearea : getcirclearea,
+    upperbound : upperbound,
+    lowerbound : lowerbound
 };
