@@ -4,22 +4,22 @@
 //by @_C1D
 //==Basic Math Functions==
 //This will square your number
-var square = function(a){
-    return a*a;
+var square = function (a) {
+    return a * a;
 };
 //This checks if the input is a decimal
-var isdecimal = function(i){
-    if(i % 1 != 0){
+var isdecimal = function (i) {
+    if (i % 1 != 0) {
         return true;
-    }else{
+    } else {
         return false;
     }
 };
 //Gets the sum of numbers in a array
-var e = function(array){
-	var sum = 0;
-	for (var i=0, total=array.length; i < total; i++) {
-		sum += array[i];
+var e = function (array) {
+    var sum = 0;
+    for (var i = 0, total = array.length; i < total; i++) {
+        sum += array[i];
     }
     return sum;
 }
@@ -27,11 +27,11 @@ var e = function(array){
 
 //==Tessellation==
 //This will tell you if the shape will tessellate based on the number of sides
-var shape_tessellate = function(s){
-    res = 360/(((s-2)*180)/s);
+var shape_tessellate = function (s) {
+    res = 360 / (((s - 2) * 180) / s);
     if (res % 1 == 0) {
         return true;
-    }else{
+    } else {
         return false;
     }
 };
@@ -40,105 +40,135 @@ var shape_tessellate = function(s){
 //==Pythagoras Therom==
 //This will get the hyp of a triangle - A is one of the sides, B is the other side
 //Ex: a =1 and b =2
-var gethypotenuse = function(a, b){
-    return Math.sqrt((a*a)+(b*b));
+var gethypotenuse = function (a, b) {
+    return Math.sqrt((a * a) + (b * b));
 };
 //This will get the length of, one of a triangle's sides - A or B must be the hyp. A must be the higher number, B must be lower than A.
-var getx = function(a, b){
-    return Math.sqrt((a*a)-(b*b));
+var getx = function (a, b) {
+    return Math.sqrt((a * a) - (b * b));
 };
 
 
 //==Congruent Triangles==
 //This check if two triangles are congruent. Triangles are formated like this:
 //a = {a:1, b:2, c:3, type:"SSS"};
-var congruent = function(a, b){
-	if((a.a == b.a || a.a == b.b || a.a == b.c) && (a.b == b.a || a.b == b.b || a.b == b.c) && (a.c == b.a || a.c == b.b || a.c == b.c)
-	   && (a.type = b.type)){
-		return true;
-	}else{
-		return false;
-	}
+var congruent = function (a, b) {
+    if ((a.a == b.a || a.a == b.b || a.a == b.c) && (a.b == b.a || a.b == b.b || a.b == b.c) && (a.c == b.a || a.c == b.b || a.c == b.c)
+        && (a.type = b.type)) {
+        return true;
+    }
+    return false;
 }
 
 //==Circular Functions==
-var pi = math.PI;
+var pi = Math.PI;
 //This function will be able to get the arch length of a circle
 //data = {archangle: 90, radius: 5};
-var archlength = function(data){
-	return data.archangle/360*2*math.PI*data.radius;
+var archlength = function (data) {
+    return (data.archangle / 360) * 2 * pi * data.radius;
 }
 //This function will be able to get the arch area of a circle
 //data = {archangle: 90, radius: 5};
-var archarea = function(data){
-	return data.archangle/360*math.PI*(data.radius*data.radius);
+var archarea = function (data) {
+    return (data.archangle / 360) * pi * square(data.radius);
 }
 //This will get the radius based on the diameter
 //d is the diameter.
-var getradius = function(d){
-	return d/2;
+var getradius = function (d) {
+    return d / 2;
 }
 //This will get the diameter based on the radius
 //r is the radius
-var getdiameter = function(r){
-	return r*2;
+var getdiameter = function (r) {
+    return r * 2;
 }
 //This will get the circumference based on the diameter.
 //d is the diameter
-var getcircumference = function(d){
-	return math.PI*d;
+var getcircumference = function (d) {
+    return Math.PI * d;
 }
 //This will get the area of a circle based on the radius.
 //r is the radius
-var getcirclearea = function(r){
-	return math.PI*(r*r);
+var getcirclearea = function (r) {
+    return Math.PI * (r * r);
 }
 
 //==Bound Functions==
 
 //This will get the upper bound of the input numbers. It currently only supports whole numbers.
 //numbers = ['1', '4', '5']
-var upperbound = function(numbers){
-	var f = '';
-	for (var i = 0; i <= numbers.length; i++){
-		numbers[i] = numbers[i] + 0.5;
-		if(i == numbers.length){
-			f += numbers[i];
-		}else{
-			f += numbers[i]+' *';
-		}
-	}
-	return eval(f);
+var upperbound = function (numbers) {
+    var f = '';
+    for (var i = 0; i <= numbers.length; i++) {
+        numbers[i] = numbers[i] + 0.5;
+        if (i == numbers.length) {
+            f += numbers[i];
+        } else {
+            f += numbers[i] + ' *';
+        }
+    }
+    return eval(f);
 }
 //This will get the lower bound of the input numbers. It currently only supports whole numbers.
 //numbers = ['1', '4', '5']
-var lowerbound = function(numbers){
-	var f = '';
-	for (var i = 0; i <= numbers.length; i++){
-		numbers[i] = numbers[i] - 0.5;
-		if(i == numbers.length){
-			f += numbers[i];
-		}else{
-			f += numbers[i]+' +';
-		}
-	}
-	return eval(f);
+var lowerbound = function (numbers) {
+    var f = '';
+    for (var i = 0; i <= numbers.length; i++) {
+        numbers[i] = numbers[i] - 0.5;
+        if (i == numbers.length) {
+            f += numbers[i];
+        } else {
+            f += numbers[i] + ' +';
+        }
+    }
+    return eval(f);
 }
+
+// The the quadratic formula is the solution of the quadratic equation
+// It is used to get the roots of a quadratic equation
+//returns an array of the roots
+var quadratic = function (a, b, c) {
+    var x, y, quadraticCondition;
+    quadraticCondition = square(b) - 4 * a * c;
+
+    if (!(typeof (a) && typeof (b) && typeof (c))) {
+        throw TypeError("Numbers are expected");
+    }
+
+    if (quadraticCondition < 0) {
+        //An error is thrown so that when the function is in use, there's a traceback. As the user
+        //expects an array rather then a string
+        throw RangeError("The quadratic equation has no solution");
+    }
+    else if (quadraticCondition === 0) {
+        x = -b / (2 * a);
+        return [x, x];
+    }
+
+    x = (-b + Math.sqrt(quadraticCondition)) / (2 * a);
+    y = (-b - Math.sqrt(quadraticCondition)) / (2 * a);
+
+    return [x, y];
+}
+
+console.log(quadratic(1, -5, 6));
+
 module.exports = {
-    square : square,
-    isdecimal : isdecimal,
-    shape_tessellate : shape_tessellate,
-    gethypotenuse : gethypotenuse,
-    getx : getx,
-    congruent : congruent,
-    e : e,
-    archlength : archlength,
-    archarea : archarea,
-    pi : pi,
-    getradius : getradius,
-    getdiameter : getdiameter,
-    getcircumference : getcircumference,
-    getcirclearea : getcirclearea,
-    upperbound : upperbound,
-    lowerbound : lowerbound
+    square: square,
+    isdecimal: isdecimal,
+    shape_tessellate: shape_tessellate,
+    gethypotenuse: gethypotenuse,
+    getx: getx,
+    congruent: congruent,
+    e: e,
+    archlength: archlength,
+    archarea: archarea,
+    pi: pi,
+    getradius: getradius,
+    getdiameter: getdiameter,
+    getcircumference: getcircumference,
+    getcirclearea: getcirclearea,
+    upperbound: upperbound,
+    lowerbound: lowerbound,
+    quadratic: quadratic
 };
